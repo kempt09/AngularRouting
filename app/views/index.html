@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css"">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="myApp">
+  <div class="top-bar">
+    <div class="expanded row">
+        <div class="top-bar-left">
+            <h2>Angular Route Demo</h2>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li class="menu-text"><a class="success button" href="#/">View One</a></li>
+                <li class="menu-text"><a class="success button" href="#/view2">View Two</a></li>
+                <li class="menu-text"><a class="success button" href="#/view3">View Three</a></li>
+                <li class="menu-text"><a class="success button" href="#/view4">View Four</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+    <ng-view>
+
+    </ng-view>
+    <script src="../angular.min.js"></script>
+    <script src="../angular-route.min.js"></script>
+    <script src="../app.js"></script>
+    <script src="../services/services.js"></script>
+    <script src="../controllers/controllers.js"></script>
+    <script src="../routes/routes.js"></script>
+  </body>
+</html>
